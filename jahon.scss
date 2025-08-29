@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    span {
+      color: #002d72; // KUN.UZ logosi uchun ko‘k rang
+    }
+  }
+
+  .nav-link {
+    color: #000;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0d6efd;
+    }
+  }
+
+  .btn {
+    border-radius: 8px;
+    font-size: 0.9rem;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* Jahon yangiliklari */
+.main-news {
+  position: relative;
+
+  .live-badge {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: red;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+}
+
+.news-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+
+  .card-text {
+    line-height: 1.3;
+  }
+}

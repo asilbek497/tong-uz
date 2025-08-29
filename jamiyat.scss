@@ -1,0 +1,88 @@
+// Umumiy ranglar
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$light-bg: #f8f9fa;
+$dark-text: #212529;
+
+// Body
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $light-bg;
+  color: $dark-text;
+}
+
+// Navbar
+.navbar {
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: $primary-color !important;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary-color !important;
+    }
+
+    &.active {
+      color: $primary-color !important;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  .btn {
+    border-radius: 30px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+// Katta yangilik
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+
+  .card-img-top {
+    transition: transform 0.4s ease;
+  }
+
+  &:hover .card-img-top {
+    transform: scale(1.05);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-body {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// 6 ta kartoshka (cards grid)
+.row.g-4 {
+  .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+  }
+}
+
+// Footer
+footer {
+  font-size: 0.9rem;
+  color: $secondary-color;
+}
+.navbar-nav a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

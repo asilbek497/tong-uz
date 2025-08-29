@@ -1,0 +1,90 @@
+// O'zgaruvchilar
+$primary-color: #0d47a1;
+$text-color: #000;
+$hover-color: darken($primary-color, 10%);
+$font-size:17px;
+// Navbar uslublar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+  .navbar-brand {
+    font-weight: bold;
+    color: white !important;
+
+
+    .logo-circle {
+      background-color: $primary-color;
+      border-radius: 50%;
+      padding: 5px 12px;
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .nav-link {
+    font-weight: bold;
+    color: $text-color !important;
+    margin: 0 5px;
+
+    &:hover {
+      color: $hover-color !important;
+    }
+  }
+
+  .btn-light {
+    border: 1px solid #ddd;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  .nav-item{
+   font-size: $font-size;
+  }
+  
+}
+
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.main-news {
+  .text-part {
+    h5 {
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.news-card {
+  width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 0.8rem 1rem;
+
+    .card-title {
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+  } 
+}

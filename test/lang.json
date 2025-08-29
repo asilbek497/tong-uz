@@ -1,0 +1,14 @@
+{
+    "uz" : {
+        "title": "Salom",
+        "day": "Kun"
+    },
+    "ru":{
+        "title": "Privet",
+        "day": "Den"
+    },
+    "en": {
+        "title": "Welcome",
+        "day": "Day"
+    }
+}
